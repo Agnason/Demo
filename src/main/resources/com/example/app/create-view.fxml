@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #6A48D7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.CreateController">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" text="РЕЕСТР ЖИВОТНЫХ" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-2.0" layoutY="90.0" prefHeight="345.0" prefWidth="507.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <RadioButton fx:id="catRadioButton" layoutX="32.0" layoutY="34.0" mnemonicParsing="false" text="Кошка" />
+            <RadioButton fx:id="hamsterRadioButton" layoutX="239.0" layoutY="34.0" mnemonicParsing="false" text="Хомяк" />
+            <RadioButton fx:id="dogRadioButton" layoutX="137.0" layoutY="34.0" mnemonicParsing="false" text="Собака" />
+            <RadioButton fx:id="donkeyRadioButton" layoutX="329.0" layoutY="34.0" mnemonicParsing="false" text="Осел" />
+            <RadioButton fx:id="horseRadioButton" layoutX="408.0" layoutY="34.0" mnemonicParsing="false" text="Лошадь" />
+            <TextField fx:id="nameTextField" layoutX="131.0" layoutY="99.0" prefHeight="28.0" prefWidth="245.0" promptText="Имя" />
+            <TextField fx:id="birthTextField" layoutX="131.0" layoutY="173.0" prefHeight="28.0" prefWidth="245.0" promptText="Дата рождения:" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonCreateAnimal" layoutX="191.0" layoutY="448.0" mnemonicParsing="false" text="Создать животное" />
+   </children>
+</AnchorPane>
