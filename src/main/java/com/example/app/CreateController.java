@@ -52,7 +52,7 @@ public class CreateController {
         DBHandler dbHandler = new DBHandler();
 
         buttonCreateAnimal.setOnAction(actionEvent -> {
-           // dbHandler.inputDataAnimal(nameTextField.getText().trim(), birthTextField.getText().trim(), chooseKind());
+           dbHandler.inputDataAnimal(nameTextField.getText().trim(), birthTextField.getText().trim(), chooseKind());
             buttonCreateAnimal.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("hello-view.fxml"));
